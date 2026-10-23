@@ -409,3 +409,13 @@
 .zm-hero .zm-hero-title{grid-column:1/-1;text-align:center;font:400 clamp(3.4rem,.4rem + 7.6vw,8rem)/.95 var(--f-display);color:var(--z-ink);white-space:nowrap;position:relative;z-index:1;margin:0}
 @media (max-width:900px){.zm-hero .zm-hero-title{white-space:normal;font-size:clamp(3.2rem,14vw,5rem)}}
 @media (max-width:600px){.zm-hero h1.zm-hero-tag{font-size:.86rem;padding:8px 13px;white-space:nowrap}}
+
+/* QC: 901–1080px had no nav at all (old rule hid it before the phone menu takes over) */
+@media (min-width:901px) and (max-width:1080px){
+  .zm .zm-nav{display:flex;gap:22px}
+  .zm .zm-nav a{font-size:1.15rem}
+}
+/* QC: the tilted service cards ran off the right edge on small laptops */
+@media (min-width:901px) and (max-width:1120px){
+  .zm-care-row{max-width:calc(100% - 2 * var(--gut));gap:26px}
+}

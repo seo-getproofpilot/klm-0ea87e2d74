@@ -15,7 +15,7 @@
 <script>document.documentElement.classList.add("js","hero-go");try{if(/[?&]nointro/.test(location.search))sessionStorage.setItem("klm_intro","1");if(matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("intro-seen")}catch(e){}</script>
 <link rel="stylesheet" href="assets/site.css?v=42">
 <link rel="stylesheet" href="assets/get-care.css?v=1">
-<link rel="stylesheet" href="assets/get-care-zoomie.css?v=11">
+<link rel="stylesheet" href="assets/get-care-zoomie.css?v=13">
 </head>
 <body class="gc zm">
 
@@ -356,25 +356,65 @@
   </div>
 </section>
 
-<section class="at-family">
+<section class="zm-fam" id="family">
   <div class="wrap">
-    <h2>Meet the Family Behind KLM</h2>
-    <p class="at-family-sub">A local, family-owned home care company serving the East Valley since 2024.</p>
-    <div class="at-family-row">
-      <article class="at-profile">
-        <img src="assets/img/founders.webp" alt="Amber and John Arrington, founders of KLM Home Care Services" width="600" height="528" loading="lazy">
-        <div class="at-profile-body">
-          <h3>Amber &amp; John Arrington</h3>
-          <p class="at-profile-role">Founders, San Tan Valley</p>
-          <ul class="at-tags"><li>Family-owned</li><li>Started in 2024</li><li>Named for Kelly</li></ul>
-          <p>Amber and John started KLM Home Care Services in 2024 and named it for Amber's dad, Kelly. They run it as a family business and send certified caregivers to homes from Queen Creek and Gold Canyon to Gilbert, Chandler and Mesa.</p>
-          <a class="zm-pill" href="tel:6023692535" data-preview-off>Call 602-369-2535</a>
+    <div class="fam-head">
+      <p class="fam-kicker">Meet the owners</p>
+      <h2>Hi, We're Amber &amp; John!</h2>
+      <p class="fam-sub">The family behind every KLM visit, right here in San Tan Valley.</p>
+    </div>
+    <div class="fam-grid">
+      <div class="fam-photos">
+        <figure class="fam-pol fam-pol-main">
+          <span class="fam-tape" aria-hidden="true"></span>
+          <img src="assets/img/founders.webp" alt="Amber and John Arrington, founders of KLM Home Care Services, standing in front of their KLM banner" width="2000" height="1760" loading="lazy">
+          <figcaption>Amber &amp; John</figcaption>
+        </figure>
+        <figure class="fam-pol fam-pol-side">
+          <img src="assets/img/at/consult.webp" alt="A KLM caregiver laughing with a client over tea at her kitchen table" width="1000" height="750" loading="lazy">
+          <figcaption>Every consult starts at the kitchen table</figcaption>
+        </figure>
+        <img class="fam-sticker fam-sticker-a" src="assets/img/zm/shield.webp" alt="" loading="lazy">
+        <img class="fam-sticker fam-sticker-b" src="assets/img/zm/teacup.webp" alt="" loading="lazy">
+      </div>
+      <div class="fam-story">
+        <p class="fam-lead">Amber and John started KLM Home Care Services in 2024 and named it after Amber's dad, Kelly Loughlin.</p>
+        <p>When Kelly needed help at home, his small town didn't have anyone who offered it. So Amber and John built the care they wish he'd had. Today they run KLM as a family business and send certified caregivers to homes from Queen Creek and Gold Canyon to Gilbert, Chandler and Mesa.</p>
+        <div class="fam-facts">
+          <div class="fam-fact c-pink"><b>Named for Kelly</b><span>Amber's dad, and the reason KLM exists</span></div>
+          <div class="fam-fact c-sun"><b>Since 2024</b><span>Family-owned in San Tan Valley</span></div>
+          <div class="fam-fact c-lav"><b>With love</b><span>It's right there in the logo</span></div>
         </div>
-      </article>
-      <figure class="at-photo">
-        <img src="assets/img/at/consult.webp" alt="A caregiver and a woman recovering from knee surgery laughing over tea at a kitchen table" width="1000" height="750" loading="lazy">
-        <p class="at-chip at-chip-d"><svg class="ico" aria-hidden="true"><use href="#i-cal"/></svg><span><b>Free consult booked</b><small>At your kitchen table</small></span></p>
-      </figure>
+        <div class="fam-ctas">
+          <a class="zm-pill" href="#request">Book a free consult</a>
+          <a class="zm-pill zm-pill-light" href="tel:6023692535" data-preview-off>Call 602-369-2535</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="zm-rev" id="reviews">
+  <div class="wrap">
+    <div class="rev-wall" id="rev-wall" hidden>
+      <h2>What Local Families Say</h2>
+      <p class="rev-sub" id="rev-score"></p>
+      <div class="rev-cards" id="rev-cards"></div>
+    </div>
+    <div class="rev-invite" id="rev-invite">
+      <div class="rev-card-mock" aria-hidden="true">
+        <div class="rvm-top"><span class="rvm-g">G</span><span><b>KLM Home Care Services</b><small>Your Google review</small></span></div>
+        <div class="rvm-stars"><i></i><i></i><i></i><i></i><i></i></div>
+        <div class="rvm-lines"><i></i><i></i><i></i></div>
+        <span class="rvm-tag">Your words go here!</span>
+        <img class="rvm-sticker" src="assets/img/zm/phone.webp" alt="" loading="lazy">
+      </div>
+      <div class="rev-copy">
+        <p class="fam-kicker">Reviews</p>
+        <h2>Had a Visit? Leave Us a Review!</h2>
+        <p>KLM is new to Google, so every review helps another East Valley family find care they can trust. It takes two minutes, and it means the world to Amber and John.</p>
+        <a class="zm-pill rev-btn" href="https://www.google.com/maps?cid=11521315002730776670" target="_blank" rel="noopener">&#9733; Leave a Google review</a>
+      </div>
     </div>
   </div>
 </section>
@@ -434,5 +474,7 @@
 <div class="gc-toast" id="toast" role="status"></div>
 <script src="assets/get-care-zoomie.js?v=3"></script>
 <script src="assets/butterflies.js?v=3"></script>
+<script src="assets/reviews.js?v=1"></script>
+<script src="assets/klm-reviews.js?v=1"></script>
 </body>
 </html>

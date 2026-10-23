@@ -429,3 +429,16 @@
 .zm-foot{padding-top:clamp(20px,3vw,40px)}
 .zm-foot .zm-tiles{margin-top:0}
 @media (max-width:600px){.zm-cta-btns{flex-direction:column;align-items:stretch;max-width:320px;margin-left:auto;margin-right:auto}}
+
+/* request ticket: easier to read, same size */
+.zm .gc-ticket{background:#FFF3E2;box-shadow:0 8px 0 var(--z-ink),0 26px 40px -22px rgba(38,20,46,.45)}
+.zm .ticket-head{border-bottom:2px solid rgba(38,20,46,.14)}
+.zm .ticket-kicker{color:#5A4862;font-weight:700}
+.zm .ticket-title{font-size:1.45rem;color:var(--z-ink)}
+.zm .ticket-rows>div{border-bottom:1.5px dashed rgba(38,20,46,.22)}
+.zm .ticket-rows dt{color:var(--z-ink);font-weight:700;font-size:.88rem}
+.zm .ticket-rows dd{font-size:1rem;color:var(--z-ink)}
+.zm .ticket-rows dd.empty{color:#7D6E85;font-weight:500;font-style:italic}
+.zm .ticket-week span{background:#fff;border:2px solid rgba(38,20,46,.28);color:var(--z-ink);font-size:.85rem}
+.zm .ticket-week span.on{background:var(--z-deep);border-color:var(--z-ink);color:#fff}
+.zm .ticket-foot{color:#4A3A52;font-weight:600}

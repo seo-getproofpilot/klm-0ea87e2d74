@@ -443,3 +443,9 @@
 .zm .ticket-week span.on{background:var(--z-deep);border-color:var(--z-ink);color:#fff}
 .zm .ticket-foot{color:#4A3A52;font-weight:600}
 @media (min-width:601px){.zm-base .demo-note{max-width:52ch;text-align:right}}
+/* request card: KLM's real logo in the header */
+.zm .ticket-head{gap:14px}
+.zm .ticket-logo{display:block;width:clamp(116px,10vw,140px);height:auto;flex:none;margin:-6px 0 -8px -6px}
+@media (max-width:600px){.zm .ticket-logo{width:112px}}
+.zm .ticket-logo{width:clamp(150px,12vw,176px);margin:0}
+@media (max-width:600px){.zm .ticket-logo{width:120px}}

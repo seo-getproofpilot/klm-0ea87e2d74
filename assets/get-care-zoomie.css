@@ -419,3 +419,13 @@
 @media (min-width:901px) and (max-width:1120px){
   .zm-care-row{max-width:calc(100% - 2 * var(--gut));gap:26px}
 }
+
+/* closing CTA + footer merged: one sign-off, the footer keeps only the nav tiles */
+.zm-cta-logo{margin:0 auto 22px;display:inline-block;background:#fff;border:var(--z-line);border-radius:26px;padding:14px 22px;box-shadow:0 6px 0 var(--z-ink);transform:rotate(-2deg)}
+.zm-cta-logo img{display:block;width:clamp(200px,24vw,300px);height:auto}
+.zm-cta>.wrap>p:not(.zm-cta-logo){color:#fff;font-weight:600}
+.zm-cta-btns .zm-pill .ico{width:18px;height:18px;flex:none;--du:transparent}
+.zm-cta-btns .zm-pill:not(.zm-pill-light) .ico{color:#fff}
+.zm-foot{padding-top:clamp(20px,3vw,40px)}
+.zm-foot .zm-tiles{margin-top:0}
+@media (max-width:600px){.zm-cta-btns{flex-direction:column;align-items:stretch;max-width:320px;margin-left:auto;margin-right:auto}}

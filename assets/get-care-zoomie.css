@@ -383,3 +383,23 @@
 .rvm-sticker{top:auto;bottom:-34px;right:-30px;transform:rotate(10deg)}
 .rvm-top b{font-size:1.1rem}
 @media (max-width:600px){.rvm-sticker{right:-6px;bottom:-30px;top:auto}}
+
+/* hero: say plainly what KLM is */
+.zm-hero-panel{grid-template-rows:auto auto 1fr auto}
+.zm-hero-tag{grid-column:1/-1;justify-self:center;margin:0 0 10px;padding:9px 18px;border-radius:999px;background:var(--z-sun);border:var(--z-line);color:var(--z-ink);font:400 clamp(1rem,.9rem + .35vw,1.3rem)/1.1 var(--f-display);transform:rotate(-2deg);position:relative;z-index:1;text-align:center}
+.zm-hero-art,.zm-hero-l,.zm-hero-r{grid-row:3}
+.zm-hero-svcs{grid-column:1/-1;grid-row:4;justify-self:center;list-style:none;margin:0 0 26px;padding:0;display:flex;flex-wrap:wrap;justify-content:center;gap:10px;position:relative;z-index:3}
+.zm-hero-svcs li{display:inline-flex;align-items:center;gap:8px;padding:6px 16px 6px 8px;background:#fff;border:var(--z-line);border-radius:999px;font:400 1.05rem/1 var(--f-display);color:var(--z-ink);box-shadow:0 4px 0 var(--z-ink)}
+.zm-hero-svcs img{width:30px;height:30px;object-fit:contain}
+@media (max-width:900px){
+  .zm-hero-tag{order:0;margin-bottom:14px}
+  .zm-hero-svcs{order:5;margin:-8px 0 22px;gap:8px}
+  .zm-hero-svcs li{font-size:.95rem;padding:5px 12px 5px 6px}
+  .zm-hero-svcs img{width:24px;height:24px}
+}
+@media (min-width:901px){
+  .zm-hero-panel{grid-template-rows:auto auto 1fr}
+  .zm-hero-svcs{position:absolute;left:50%;bottom:24px;transform:translateX(-50%);width:max-content;max-width:92%;margin:0}
+  .zm-hero h1{font-size:clamp(3.4rem,.4rem + 7.6vw,8rem)}
+}
+@media (max-width:600px){.zm-hero-tag{font-size:.88rem;padding:8px 14px;white-space:nowrap}}

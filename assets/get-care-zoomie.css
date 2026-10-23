@@ -290,3 +290,7 @@
 @media (max-width:600px){.zm-logo img{width:auto;height:54px;margin:-10px 0}}
 .zm-logo img{height:78px;margin:-22px 0}
 @media (max-width:600px){.zm-logo img{height:64px;margin:-15px 0}}
+
+/* butterflies drifting past while scrolling */
+.drifter{position:fixed;left:0;top:0;width:var(--s);height:calc(var(--s) * .8);margin:calc(var(--s) * -.4) 0 0 calc(var(--s) * -.5);z-index:40;pointer-events:none;will-change:transform;filter:drop-shadow(0 4px 6px rgba(60,30,90,.18))}
+.drifter .wl,.drifter .wr{animation:flap var(--fd,.18s) ease-in-out infinite alternate}

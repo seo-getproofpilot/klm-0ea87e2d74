@@ -442,3 +442,4 @@
 .zm .ticket-week span{background:#fff;border:2px solid rgba(38,20,46,.28);color:var(--z-ink);font-size:.85rem}
 .zm .ticket-week span.on{background:var(--z-deep);border-color:var(--z-ink);color:#fff}
 .zm .ticket-foot{color:#4A3A52;font-weight:600}
+@media (min-width:601px){.zm-base .demo-note{max-width:52ch;text-align:right}}

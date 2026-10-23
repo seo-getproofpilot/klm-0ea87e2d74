@@ -147,3 +147,15 @@
 
   go(0); render();
 })();
+
+/* logo and every "Home" link: the #top anchor sits on the sticky header, so scroll the page itself */
+(function () {
+  var reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest('a[href="#top"]');
+    if (!a) return;
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    if (location.hash) history.replaceState(null, "", location.pathname + location.search);
+  });
+})();

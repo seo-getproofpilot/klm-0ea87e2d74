@@ -159,3 +159,18 @@
     if (location.hash) history.replaceState(null, "", location.pathname + location.search);
   });
 })();
+
+// Nav highlight follows the section in view.
+(() => {
+  const links = [...document.querySelectorAll('.zm-nav a[href^="#"]')];
+  const secs = links.map(a => a.getAttribute('href') === '#top' ? document.body : document.querySelector(a.getAttribute('href')));
+  let raf = 0;
+  const spy = () => {
+    raf = 0;
+    let on = 0;
+    secs.forEach((s, i) => { if (s && i && s.getBoundingClientRect().top < innerHeight * 0.4) on = i; });
+    links.forEach((a, i) => i === on ? a.setAttribute('aria-current', 'location') : a.removeAttribute('aria-current'));
+  };
+  addEventListener('scroll', () => { raf ||= requestAnimationFrame(spy); }, { passive: true });
+  spy();
+})();

@@ -449,3 +449,4 @@
 @media (max-width:600px){.zm .ticket-logo{width:112px}}
 .zm .ticket-logo{width:clamp(150px,12vw,176px);margin:0}
 @media (max-width:600px){.zm .ticket-logo{width:120px}}
+@media (max-width:600px){.zm .zm-prop-brush{width:62px;left:6px;top:-34px}}
